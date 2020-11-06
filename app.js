@@ -83,24 +83,51 @@ const store = {
   // 5 or more questions are required
   questions: [
     {
-      question: 'What color is broccoli?',
+      question: 'How many licks does it take to get to the center of a Tootsie-Pop?',
       answers: [
-        'red',
-        'orange',
-        'pink',
-        'green'
+        'One',
+        'Two',
+        'Three',
+        'The world may never know'
       ],
-      correctAnswer: 'green'
+      correctAnswer: 'The world may never know'
     },
     {
-      question: 'What is the current year?',
+      question: 'At what RPM does the centrifugal clutch engage on the Stihl MS201T chainsaw?',
       answers: [
-        '1970',
-        '2015',
-        '2019',
-        '2005'
+        '13,250',
+        '1',
+        '2,300',
+        '3,700'
       ],
-      correctAnswer: '2019'
+      correctAnswer: '3,700'
+    },
+    {
+      question: 'How much voltage is needed to operate the starter on your car?'
+      answers: [
+        'A lot',
+        '12v',
+        '120v',
+        'None'
+      ],
+    },
+    {
+      question: 'How many threads per inch are there on a 1/4-20 bolt?'
+      answers:[
+        '1',
+        '4',
+        '20',
+        '1420'
+      ]
+    },
+    {
+      question: 'To begin the quiz you pressed a button with "start" written on it. What language was this written in?'
+      answers: [
+        'English',
+        'Spanish',
+        'Portuguese',
+        'Haitian Creole'
+      ]
     }
   ],
   quizStarted: false,
@@ -112,14 +139,17 @@ const store = {
  * 
  * Technical requirements:
  * 
- * Your app should include a render() function, that regenerates the view each time the store is updated. 
+ * Your app should include a render() function, that regenerates the view
+ * each time the store is updated. 
  * See your course material and access support for more details.
  *
  * NO additional HTML elements should be added to the index.html file.
  *
- * You may add attributes (classes, ids, etc) to the existing HTML elements, or link stylesheets or additional scripts if necessary
+ * You may add attributes (classes, ids, etc) to the existing HTML 
+ * elements, or link stylesheets or additional scripts if necessary
  *
- * SEE BELOW FOR THE CATEGORIES OF THE TYPES OF FUNCTIONS YOU WILL BE CREATING 👇
+ * SEE BELOW FOR THE CATEGORIES OF THE TYPES OF FUNCTIONS YOU 
+ * WILL BE CREATING 👇
  * 
  */
 
