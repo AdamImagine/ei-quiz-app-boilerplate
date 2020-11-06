@@ -1,6 +1,84 @@
 /**
  * Example store structure
   new comment*/
+  let score = 0;
+  let currentQuestion = 0;
+
+  
+  function init() {
+    console.log("Hello")
+    begin();
+    
+  }
+
+  $(init)
+
+  function renderQuestions() {
+    $("#questionsContainer").html("")
+    
+      $("#questionsContainer").append(`
+      <h2>${store.questions[currentQuestion].question
+      }</h2>
+      <form class="questionForm">
+      `)
+      store.questions[currentQuestion].answers.forEach(answer=> {
+        $(".questionForm").append(
+        `<input type="radio" name="answers" value="${answer}">${answer}<br>`)
+      })
+    $("#questionsContainer").append(`</form>`)
+    $("#questionsContainer").append(`
+    
+    <button id=submitQuiz>Submit</button>
+    <button id=nextQuestion>Next Question</button>`);
+    renderNextQuestion()
+    currentQuestion++
+  }
+
+  function begin() {
+    $("main").html(`
+    <div id= "questionsContainer"></div>
+    <button id=startQuiz>Start Quiz</button>`);
+    startQuiz();
+  }
+
+
+
+  function startQuiz() {
+    $("#startQuiz").on("click", function(){
+      renderQuestions();
+      /*store.questions.forEach(question=> {
+        $("#questionsContainer").append(`
+        <h2>${question.question}</h2>
+        <form class="questionForm">
+        `)
+        question.answers.forEach(answer=> {
+          $(".questionForm").append(
+          `<input type="radio" name="answers" value="${answer}">${answer}`)
+        })
+      })
+      $("#questionsContainer").append(`</form>`)
+      $("#questionsContainer").append(`
+      
+      <button id=submitQuiz>Submit</button>
+      <button id=nextQuestion>Next Question</button>`);*/
+    });
+
+  }
+
+  function renderNextQuestion() {
+    $("#nextQuestion").on("click", function(){
+      console.log(currentQuestion)
+      if(currentQuestion == store.questions.length){
+alert("No more questions")
+return;
+}
+      renderQuestions();
+    });
+
+  }
+
+
+
 const store = {
   // 5 or more questions are required
   questions: [
