@@ -1,6 +1,6 @@
 /**
  * Example store structure
- */
+  new comment*/
 const store = {
   // 5 or more questions are required
   questions: [
