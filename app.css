@@ -1,0 +1,131 @@
+/* Your styles should be mobile-first and responsive */
+
+/** 
+  * If you are unclear on how to utilize a mobile-first, responsive technique to write your CSS, here is an example: 
+  *
+  * https://github.com/andreacardybailey/responsive_example/blob/master/styles/responsive-base.css 
+  *
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+
+html{
+  background: url('https://ichef.bbci.co.uk/news/800/cpsprodpb/37B5/production/_89716241_thinkstockphotos-523060154.jpg');
+  background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+h1 {
+  font-size: 30px;
+  margin: 2px 0;
+}
+h3
+{
+  border: 2px solid #d5d5d5; 
+  width: 500px; 
+  text-align: center; 
+  padding: 5px;
+  margin: 5px;
+  font-size: larger;
+}
+body{
+  width: 100%;
+  background-color: lightslategray;
+    font-family: arial;
+    font-size: 23px;
+   margin-left: 5px;
+   color:black;
+   background-size: cover;
+   padding: 0px;
+  margin: 0px;
+}
+
+header{
+align-content: center;
+  width 100%;
+  background: gray;
+  color: #ffffff;
+    padding: 20px ;
+    font-size: 20px;
+    text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ 
+}
+
+
+
+.questions{
+  float:right;
+    font-size: 14px;
+    font-weight: 800;
+   padding-top: 60px;
+       margin-left: 70px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+
+button {
+    font-size: 16px;
+    background: gray;
+    padding: 10px;
+    border-radius: 5px 0 0 5px;
+    text-align: center;
+    color: #ffffff;
+    margin-left: 20px;
+    margin-right: 30px;
+    margin-top: 50px;
+    display:inline;
+}
+
+
+li
+{
+  list-style: none;
+}
+
+main
+{
+  margin-left: 50px;
+}
+
+.buttonContainer
+{
+  width: 50%;
+  display: flex;
+  flex-direction: row; 
+}
+
+@media only screen and (min-width: 600px){
+.questions{
+  float:right;
+  font-size: 1em;
+  font-weight: 800;
+  margin-left: 70px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 50%
+    
+}
+
+
+}
+
+@media only screen and (max-width: 600px){
+.buttonContainer
+{
+  width: 40%;
+}
+main 
+{
+    width: 250px;
+    font-size: medium;
+    padding: 0px;
+    margin: 0px;
+}
+h3
+{  
+  width: 250px; 
+}
+
+}
